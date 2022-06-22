@@ -1,4 +1,4 @@
-# VSR-RRT-Variable-Sampling-Region-RRT
+# VSR-RRT-(Variable-Sampling-Region-RRT)
 RRT based path planning
 
 In recent decades, natural disasters such as earthquakes, tsunamis, and floods have been occurring more and more frequently in the world. To reduce human casualties and property losses during these disasters, this research is focused on quickly planning a short evacuation route for fast and convenient navigation in urban environments in emergencies.
