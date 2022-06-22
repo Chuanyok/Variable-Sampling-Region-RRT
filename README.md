@@ -10,3 +10,5 @@ Firstly, this research proposes the VSR-RRT algorithm that uses an approach to f
 Secondly, the approach of adjusting the sampling region is combined with an approach that sampling the goal to further reduce computation time and path length. This algorithm adjusts the sampling region only when an unavailable node is obtained, otherwise sampling the goal.
 
 Thirdly, a path smoothing method is proposed to get a shorter and smoother path by removing the redundant nodes on a path. If a line connecting two nodes does not pass through any obstacle, all the nodes between these two nodes will be redundant. The greedy algorithm is used to iterate over all the nodes on the path to check if they are redundant.
+
+The maps used in simulation are from Massachusetts Buildings Dataset provided by University of Toronto, which contains aerial images of Boston City to aid machine learning for aerial image labeling. https://www.kaggle.com/datasets/balraj98/massachusetts-buildings-dataset
