@@ -14,4 +14,4 @@ Thirdly, a path smoothing method is proposed to get a shorter and smoother path 
 The maps used in simulation are from Massachusetts Buildings Dataset provided by University of Toronto, which contains aerial images of Boston City to aid machine learning for aerial image labeling. https://www.kaggle.com/datasets/balraj98/massachusetts-buildings-dataset
 
 The simulation is implemented in Matlab (R2020a), on the laptop with a CPU of Intel Corei7-9750H @ 2.60GHz and 32GB memory. The step size is set to 5 in RRT and Goal-biased RRT algorithms because this step size performs best in terms of computational speed among all the tests with different step sizes; similarly, the default step size for VSR-RRT, which is used to sample on the full map, is also set as 5, and it will change the step size to 2 to obtain better path finding ability in narrow passages when collisions are detected and need to be resampled at local locations.
-[Image text]!(Simulation Results/1.png)
+![image](https://github.com/Chuanyok/Variable-Sampling-Region-RRT/blob/main/Simulation%20Results/1.png)
