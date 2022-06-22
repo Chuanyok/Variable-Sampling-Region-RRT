@@ -1,6 +1,6 @@
-%% RRT algorithm
+%% a* algorithm
 % YU CHUANGYANG  Waseda University
-% Code for Robot Path Planning using Rapidly-exploring Random Trees
+% Code for Robot Path Planning using A* algorithm
 %% 
 
 function feasible=feasiblePoint(point,map)
