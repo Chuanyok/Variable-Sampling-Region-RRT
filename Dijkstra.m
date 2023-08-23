@@ -85,7 +85,8 @@ while size(Q,1)>0
          if checkPath(n(1:2),newPos,map) %if path from n to newPos is collission-free
               if closed(newPos(1),newPos(2))~=0 % not already in closed
                   historicCost=n(3)+historic(n(1:2),newPos);
-                  heuristicCost=heuristic(newPos,goal);
+                  % heuristicCost=heuristic(newPos,goal);
+                  heuristicCost=0;
                   totalCost=historicCost+heuristicCost;
                   add=true; % not already in queue with better cost
                   if length(find((Q(:,1)==newPos(1)) .* (Q(:,2)==newPos(2))))>=1

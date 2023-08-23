@@ -84,9 +84,9 @@ while size(Q,1)>0
          newPos=[n(1)+mx(mxi)-rx n(2)+my(mxi)-ry]; % possible new node
          if checkPath(n(1:2),newPos,map) %if path from n to newPos is collission-free
               if closed(newPos(1),newPos(2))~=0 % not already in closed
-                  historicCost=n(3)+historic(n(1:2),newPos);
-                  % heuristicCost=heuristic(newPos,goal);
+                  % historicCost=n(3)+historic(n(1:2),newPos);
                   heuristicCost=0;
+                  heuristicCost=heuristic(newPos,goal);
                   totalCost=historicCost+heuristicCost;
                   add=true; % not already in queue with better cost
                   if length(find((Q(:,1)==newPos(1)) .* (Q(:,2)==newPos(2))))>=1
